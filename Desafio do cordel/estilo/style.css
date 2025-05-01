@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+RO:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Playfair Display", serif;
+    --fonte3: "Sriracha", cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: rgb(215, 196, 172);
+    font-family: var(--fonte2);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.315);
+    color: white;
+    text-align: center;
+}
+
+header > h1 { /* cabeçalho */
+    padding-top: 50px;
+    font-variant:small-caps; /* para deixar o texto maiusculo*/
+    font-family: var(--fonte3);
+    font-size: 05vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header :hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em ; /* espaçamento entre linhas */
+    padding-left: 30px; /* espaçamento lateral esquerdo*/
+    font-family: var(--fonte2);
+    font-size: 1.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.315);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.258);
+    background-size: cover;
+    background-attachment: fixed; /* efeito parallax */
+}
+
+section.imagem > p {
+    display: inline-block; /* caixa que se adapta ao tamanho do conteúdo */
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.583);
+    text-shadow: 1px 2px 0px black ; /* sombra na letra */
+}
+
+section#img01{
+    background-image: url(imagens/cordel.jpg);
+    background-position: left center ;
+    background-repeat: center ;
+   
+}
+
+section#img02{
+    background-image: url(imagens/Gemini_Generated_Image_8mj8v38mj8v38mj8.jpeg);
+    background-position: left center ;
+  
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.315);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
